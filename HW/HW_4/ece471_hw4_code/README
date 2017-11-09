@@ -1,0 +1,46 @@
+ECE 471 Fall 2017 -- Homework 4
+
+Name: Matthew Blanchard
+
+
+What you did for something cool (if applicable):
+
+Modified the read_switch code so that, in addition to printing to the screen, it
+also toggles the LED when the switch state changes.
+
+Answers to Question #5:
+
+a. usleep passes control of the CPU to another program, so that cycles
+   are not wasted while a program does nothing. It is also more
+   (but not completely) accurate in terms of delay length.
+
+b. The operating system (at least in this case) abstracts away a great
+   deal of the complexity which would be involved in accessing and 
+   configuring the GPIO pins. Instead of locating the correct memory
+   locations for the pins and configuring them via bitmasks, you can
+   instead simply open and write to a file, which is more human-readable
+   and easier to code (at the cost of speed).
+
+c. There are several configuration options for GPIO pins which are not 
+   available in the OS. Pull-up vs. pull-down and clock speed are just
+   two examples. Additionally, accessing the GPIO pins from the OS
+   is considerably slower, due to a significant amount of overhead. 
+
+d. I would argue that whether a web browser is part of an operating system
+   depends on how you define "operating system". If you define an operating
+   system to include, in addition to the kernel, the entire ensemble of 
+   software which is packaged with it, then yes it is part of the OS. If 
+   you define an OS as just the kernel and a few essential utilities, then
+   the web browser is not (or at least should not) be part of the OS. I 
+   support the later option.
+
+Answers to Question #6:
+
+a. Machine type: Raspberry Pi 3 Model B Rev 1.2
+
+b. Kernel version: 4.4.38-v7+ #938 SMP
+
+c. Free Disk space: 18GB out of 30G
+
+d. The -h option makes the output human readable, by converting 
+   raw byte sizes to powers of 1024, with the SI prefixes K, M, G, etc.

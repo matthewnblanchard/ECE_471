@@ -1,0 +1,32 @@
+ECE471 HW#6 -- Fall 2017
+
+Name: Matthew Blanchard
+
+5.   The "cool" code generates bytes to write to the display randomly every 1/10 of a second,
+     causing a randomly changing display.
+
+6.
+ a). There is no implementation to read a full byte from the slave device. Additionally,
+     there is no support for clock stretching. 
+
+ b). If the slave device attempts to stretch the clock, this code does not check.
+     In this case the master would read data before it actually begins being transmitted
+     and would receive erroneous data.
+
+7.
+ a). This would be a hard deadline. If the pulsing does not begin within 10ms,
+     the brakes will not operate correctly. If a car's brakes do not operate correctly,
+     people can die.
+
+ b). This would be a soft deadline. If the tuning lasts longer than 1 second, it is 
+     only a minor inconvenience. The results are still useful (the radio station switches).
+
+ c). This is a firm deadline. The longer it takes for a frame to generate, the less useful
+     the frame is. If the frame takes too long, it becomes entirely useless as the viewer
+     is no longer interested in that frame.
+
+8.
+ a). arch_timer
+ b). The yes command outputs "y", or some other provided argument, repeatedly. It is useful
+     when piped to some script/utility which prompts the user for confirmation a lot, if the 
+     is certain they want to answer "yes" for all ofthese prompts.

@@ -1,0 +1,25 @@
+ECE471 HW5 -- Fall 2017
+
+Name: Matthew Blanchard
+
+
+6.      My "something cool" plays an animation on the display. It cycles
+        through positions from left to right on the display, lighting a single
+        segment at a time traversing the perimeter of each display position.
+
+7.
+ a). The GPU performs the initial booting steps, running bootcode.bin. This is not
+        normal for an ARM board
+ b). FAT32 filesystems take up a small amount of space (less overhead) and is simple
+        and free. This keeps the boot code space small and simple.
+ c). Bootloader
+ d). The lower addresses are reserved for future expansion, so no device should
+        have them. The upper addresses are used in the 10-bit address extension,
+        so no device should have those either.
+
+8.
+ a). 81 lines
+ b). 57 line difference
+
+
+

@@ -1,0 +1,17 @@
+ECE471 Fall 2017 -- HW7
+
+Name: Matthew Blanchard
+
+4. Describe your something cool: Prints a running maximum, minimum, and average of the temperature readings in celsius and fahrenheit every 5th reading
+
+5. a. Compared to I2C, SPI has no standard surrounding it, so there a few guarantees. Also, it uses more wires.
+   b. Unlike I2C, SPI is full duplex, and can be much faster.
+   c. No. Much like I2C, SPI has a pratical maximum distance of a few meters, due to line capacitance.
+   d. The GPIO utilities from the operating system have significant overhead, and are thus unsuitable for high frequency applications,
+        such as SPI. It is very unlikely you would be able to meet the 10kHz spec this way. 
+
+6. a. /dev/null discards any input sent to it 
+   b. /dev/full always returns an "out of space" error (because it's always full)
+   c. /dev/zero could be used to create files filled exclusively with zeros.
+   d. /dev/random generates random numbers by gathering entropy from various sources within the device (environmental noise, for instance)
+

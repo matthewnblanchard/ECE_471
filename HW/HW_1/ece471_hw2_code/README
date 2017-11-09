@@ -1,0 +1,18 @@
+Name: Matthew Blanchard
+
+Answers to homework questions in Part 7:
+
+(a): You could run "man ls". "man" is short for "manual". This will
+        produce the manual pages for the ls program
+
+(b): The -a option (short for -all) causes the program to show all
+        files in the directory, including those starting with "."
+
+(c): One major reason that Linux is used in embedded design is that it's free.
+        companies don't have to pay for operating system licenses for all of 
+        the devices they produce which include the embedded system. 
+
+(d): I am using ssh to connect to my pi. It's set up on my home network with 
+        a port forward for port 22 for reachability away from home. To get files
+        from websites (such as this homework) I use wget, and to transfer files
+        between my pi and other devices I own, I use sftp.

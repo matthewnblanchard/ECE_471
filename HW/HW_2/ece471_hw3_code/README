@@ -1,0 +1,42 @@
+ECE 471 Fall 2017 -- Homework 3
+
+Name:
+
+Answer to Question #3a:
+
+#1 Move to end of buffer
+
+#2 Change decimal digit to ASCII equivalent
+
+Answer to Question #7:
+
+a. hello_world        : 624 bytes
+   hello_world.thumb  : 604 bytes
+   hello_world.thumb2 : 604 bytes
+   
+   The thumb executables are 20 bytes smaller than the regular ARM
+   executable. Notably, the THUMB and THUMB2 executables are the same
+   size.
+
+b. The C compiled executable is 3 kilobytes. This is roughly 5 times
+   the size of the ARM assembled executable.
+
+c. In a space constrained system, standard ARM would be preferable to
+   C due to its small size after assembly. In especially constrained
+   spaces, THUMB/THUMB2 code would net an even smaller assembled 
+   executable.
+
+d. The C code was much faster to write. Functionality that would take
+   many lines of assembly code can be accomplished with very few lines
+   of C code. In addition, libraries exist for many common processes 
+   (such as printf), so you don't have to write those subroutines 
+   yourself.
+
+Answer to Question #8a: A quick search on the year 1752 reveals that
+the unusual jump in days (the 2nd to the 14th) is in fact intentional.
+All official calendars have them removed. These days were dropped in
+order to adjust from the Julian calendar to the Gregorian calendar.
+In the British Empire (from which the US was born), this changeover 
+happened in the year 1752. By the time they made the change, the 
+calendars had 11 days of difference which needed to be discarded. Thus,
+September 2nd is followed by September 14th. 
